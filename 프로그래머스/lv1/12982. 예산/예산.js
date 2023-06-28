@@ -3,8 +3,8 @@ function solution(d, budget) {
     d.sort((a,b) => a - b);
 
     for(let i = 0; i < d.length; i++){
+        sum += d[i];
         answer++;
-        sum += d[i]
 
         if(sum > budget)
             answer--;
